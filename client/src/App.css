@@ -1,0 +1,78 @@
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: "Poppins", sans-serif;
+}
+
+#home {
+	height: calc(100vh - 50px);
+}
+
+.details-form {
+	margin: 7vh 0;
+}
+
+#login .container,
+#register .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 500px;
+	margin: auto;
+	padding: 20px 0;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.field {
+	margin: 20px 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.otp-field {
+	margin: 20px 30px;
+	display: flex;
+}
+
+.label {
+	margin-left: 10px;
+}
+
+.input-details {
+	margin: 5px 10px;
+	padding: 5px 0 3px 0;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+}
+
+.otp-input-details {
+	margin: 5px 15px;
+	width: 1.25em !important;
+	height: 85%;
+	outline: none;
+	border: 2px solid black;
+}
+
+.submit-btn {
+	margin: 20px 40px;
+	padding: 5px;
+	color: #fff;
+	background-color: blueviolet;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+.otp-btn {
+	margin: 0px 10px;
+	padding: 5px;
+	color: #fff;
+	/* background-color: blueviolet; */
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+}
