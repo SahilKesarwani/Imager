@@ -3,6 +3,8 @@
 	"version": "1.0.0",
 	"main": "server.js",
 	"scripts": {
+        "client-install": "cd client && yarn",
+        "client-build": "cd client && yarn run build",
 		"start": "node server.js",
 		"server": "nodemon server.js",
 		"client": "cd client && yarn start",
