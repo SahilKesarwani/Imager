@@ -17,7 +17,7 @@ const Home = memo(({ user }) => {
 		formData.append("file", file);
 		formData.append("userId", user._id);
 
-		const res = await axios.post("http://localhost:8000/api/items", formData, {
+		const res = await axios.post("/api/items", formData, {
 			headers: {
 				Accept: "multipart/form-data",
 				"Content-Type": "multipart/form-data",
@@ -37,7 +37,7 @@ const Home = memo(({ user }) => {
 			return [];
 		}
 
-		const res = await axios.get(`http://localhost:8000/api/items/${user._id}`, {
+		const res = await axios.get(`/api/items/${user._id}`, {
 			headers: {
 				Accept: "application/json",
 				"Content-Type": "application/json",
@@ -74,7 +74,7 @@ const Home = memo(({ user }) => {
 					<>
 						<h2 className="mt-5">Your Uploaded Images</h2>
 						{allImages.map(image => {
-							return <img src={`http://localhost:8000/images/${image.img}`} width={200} height={200} class="rounded img-thumbnail m-2" alt="..." />;
+							return <img src={`/images/${image.img}`} width={200} height={200} class="rounded img-thumbnail m-2" alt="..." />;
 						})}
 					</>
 				)}

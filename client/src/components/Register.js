@@ -24,7 +24,7 @@ const Register = memo(({ isAuthenticated, authenticate }) => {
 		e.preventDefault();
 
 		try {
-			const res = await axios.post("http://localhost:8000/api/users", user, {
+			const res = await axios.post("/api/users", user, {
 				headers: {
 					Accept: "application/json",
 					"Content-Type": "application/json",

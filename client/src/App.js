@@ -24,7 +24,7 @@ const App = () => {
 			return;
 		}
 		try {
-			const res = await axios.get("http://localhost:8000/api/auth/user", {
+			const res = await axios.get("/api/auth/user", {
 				headers: {
 					Accept: "application/json",
 					"Content-Type": "application/json",
